@@ -3,11 +3,12 @@
 ## Overview
 A one-day class to develop the necessary skills to clean, join, process, and visualize NYC Parks data with Microsoft Excel
 
-![img](Overview.jpg)
+<div width="600px">
+	<img src="Overview.jpg">
+	<img src="Communication-Process.jpg" width="300px" align="left">
+	<img src="SoftSkills-HardSkills.jpg" width="300px" align="right">
+</div>
 
-![img](Communication-Process.jpg)
-
-![img](SoftSkills-HardSkills.jpg)
 
 ## Participant Development Areas
 **Conceptualizing:** Supported scoping of analytics problem and process
