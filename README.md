@@ -6,7 +6,7 @@ A one-day class reinforcing the skills necessary to clean, process, and visualiz
 ![img](Overview.jpg)
 
 ## Target Audience
-Employees of all levels who have a good working knowledge of how to sort, filter, aggregate, and visualize data in Microsoft Excel, as well as a familiarity with the data analytics process. Students should have some familiarity with basic functions and how to write formulas to transform data. Participants should complete Introduction to Data Analysis prior to attending this class for an introduction to problem ideation and process mapping.
+Employees of all levels of responsibility who have a good working knowledge of how to sort, filter, aggregate, and visualize data in Microsoft Excel, as well as a familiarity with the data analytics process. Participants should have some familiarity with basic functions and how to write formulas to transform data. Participants should complete Introduction to Data Analysis prior to attending this class for an introduction to problem ideation and process mapping.
 
 ## Goals
 + Reinforce and practice key steps in exploratory data analysis
