@@ -29,11 +29,11 @@ Employees of all levels who have a good working knowledge of how to sort, filter
 **Language Objective:** Develop greater fluency in basic data skills to conceptualize a problem with data, integrate context, and communicate a true and compelling data story to others
 
 ## Learning Objectives
-Participants will be experienced in the key steps of exploratory data analysis with Microsoft Excel
-Participants will be familiar with the techniques of advanced data analysis with Microsoft Excel
-Participants will be practiced in using the techniques of brainstorming, problem ideation, and process mapping to scope and execute an analytical question
-Participants will be practiced presenting analytical findings and describing the key steps in their analysis to their peers 
-Participants will have an increased curiosity about how data can be leveraged for operational awareness and program success
++ Participants will be experienced in the key steps of exploratory data analysis with Microsoft Excel
++ Participants will be familiar with the techniques of advanced data analysis with Microsoft Excel
++ Participants will be practiced in using the techniques of brainstorming, problem ideation, and process mapping to scope and execute an analytical question
++ Participants will be practiced presenting analytical findings and describing the key steps in their analysis to their peers 
++ Participants will have an increased curiosity about how data can be leveraged for operational awareness and program success
 
 
 ## Outline
