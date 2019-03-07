@@ -9,7 +9,7 @@ A one-day class reinforcing the skills necessary to clean, process, and visualiz
 Employees of all levels of responsibility who have a good working knowledge of how to sort, filter, aggregate, and visualize data in Microsoft Excel, as well as a familiarity with the data analytics process. Participants should have some familiarity with basic functions and how to write formulas to transform data. Participants should complete Introduction to Data Analysis prior to attending this class for an introduction to problem ideation and process mapping.
 
 ## Goals
-+ Reinforce and practice key steps in exploratory data analysis
++ Reinforce and practice best practices in exploratory data analysis
 + Demonstrate advanced techniques with Microsoft Excel for data analysis
 + Reinforce brainstorming, problem ideation, and process mapping skills introduced in previous classes
 + Practice presenting true and compelling data stories to peers
