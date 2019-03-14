@@ -40,20 +40,20 @@ Employees of all levels of responsibility who have a good working knowledge of h
 + Welcome and Introductions
 + Excel I Recap
 + Plan the Work
-    + Data Conversation (identifying assumptions/validation)
-    + Documenting work (process mapping redux)
     + Importing Data (SQL, CSV)
+    + Group Ideation and Decision-Making
+    + Process Mapping Redux
 + Break
 + Work the Plan
-    + Data Types
-    + Formulas/Order of Operations
-    + Nesting functions
+    + Documenting Your Work
+    + Joining by Attributes (Unique Key VLOOKUP)
+    + Nested functions
     + Aggregating (SUMIF, COUNTIF)
     + Stacking Fields in PivotTables
-    + Joining by Attributes (Unique Key VLOOKUP)
 + Lunch
 + Refine the Work
-    + Data Visualization Redux
+    + Data Visualization to Tell a Story
+    + Key Elements to Consider
 + Communicate the Work
     + Presentations
 + Wrap-Up
