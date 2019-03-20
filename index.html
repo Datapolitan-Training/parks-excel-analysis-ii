@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Advanced Analysis with SQL - NYC Parks</title>
+    <title>Excel for Data Analysis II - NYC Parks</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="slide.css"/>
   </head>
@@ -33,13 +33,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', end
 class:center, middle
 ![img-center-50](images/datapolitan.png)
 
-# Advanced Analysis with SQL<br>City of New York Parks and Recreation
+# Excel for Data Analysis II<br>City of New York Parks and Recreation
 
 - - -
 
 ## Instructors: 
 ## Teaching Assistant:
-### Follow along at: http://bit.ly/advanced-analysis-sql
+### Follow along at: http://bit.ly/xxxx
 
 ---
 
@@ -53,14 +53,14 @@ class:center,middle
 ---
 
 # A Few Ground Rules
-???
-+ Facilitators establish the intention we have for the culture of the classroom
---
 
 + Step up, step back
 --
 
-+ Be curious and ask questions!
++ One mic
+--
+
++ Be curious and ask questions
 --
 
 + Assume noble regard and positive intent
@@ -69,10 +69,13 @@ class:center,middle
 + Respect multiple perspectives 
 --
 
-+ Listen deeply
++ Listen to comprehend, not to respond
 --
 
 + Be present (phone, email, social media, etc.)
+
+???
++ Facilitators establish the intention we have for the culture of the classroom
 
 ---
 
@@ -80,7 +83,7 @@ class:center,middle
 + Who are you?
 + Where do you work?
 + What has been the proudest moment in your job?
-+ What's your favorite national or state park?
++ If you were an Excel function, which would you be?
 
 ???
 + An opportunity for participants to get to know each other and settle into the class
@@ -89,11 +92,40 @@ class:center,middle
 
 ---
 
-# Housekeeping
-???
-+ Facilitator sets expectations with the students
-+ Establishes the "contract" for the class
+# What to Expect Today
++ Practice with group ideation and process mapping
 --
+
++ Helpful demonstration of more advanced Excel skills
+--
+
++ More advanced exploration of data visualization
+--
+
++ Useful practice with NYC Parks data
+
+???
++ An opportunity to set expectations about the topics covered today
+
+---
+
+# Key Things to Keep in Mind
++ Our intention is to more deeply explore important data analysis concepts
+--
+
++ Our focus today is process over product
+--
+
++ This is a chance to develop experience collaborating together on problems
+--
+
++ Our ultimate goal is to help you leverage data to improve operations in your areas of responsibility
+
+???
+
+---
+
+# Housekeeping
 
 + We’ll have one 15 minute break in the morning
 --
@@ -112,6 +144,82 @@ class:center,middle
 
 + Please take any phone conversations into the hall to not disrupt the class
 
+???
++ Facilitator sets expectations with the students
++ Establishes the "contract" for the class
+
+---
+
+class:center,middle
+# Let's Review
+
+---
+
+# A Review of <br>[Introduction to Data Analytics](http://training.datapolitan.com/parks-intro-analytics/#1) and <br>[Excel for Data Analysis I](http://training.datapolitan.com/parks-excel-analysis-i/#1)
+
++ In your groups, you will create a concept map of what you have learned so far
+--
+
++ Use the ideation process
+__
+
+++ 3 minutes to brainstorm on your own
+--
+
+++ 3 minutes to share/consolidate as a group
+__
+
+++7 minutes to create your map
+
+
+???
++ Facilitator walks group through the two 3-minute section, then moves on to next slide to explain what a concept map is
+
+---
+
+# Concept Mapping
+
++ A concept map demonstrates how related ideas are connected
+--
+
++ It contains a central idea, main points, and supporting details
+--
+
++ It has lines that demonstrate how the main points and supporting details connect with each other
+
+
+???
+
+---
+
+# Creating Your Concept Map
+
++ Place "Data Driven Culture" at the center of your map
+--
+
++ Identify the main points and supporting details from your post-its
+--
+
++ Arrange the main points and supporting details around the main idea
+__
+
++ Use arrows, lines, symbols, and colors to connect related content
+--
+
+![img-center-70](images/bread.png)
+
+
+???
++Walk through the steps, answer questions, then give 7 minutes to create their maps
+
+---
+
+class:center,middle
+# Share Out
+
+???
++Allow each group a few minutes to share their concept map with the class
+
 ---
 
 class:center,middle
@@ -119,267 +227,70 @@ class:center,middle
 
 ---
 
-class:center,middle
-# A Quick Recap from <br>[Introduction to Data Analytics](http://training.datapolitan.com/parks-intro-analytics/#1)
-???
-+ Facilitator concludes the walk-through to shift to a discussion of data and analysis
----
+# Today's Data
 
-# The Value of Data
-???
-+ Facilitator brings back discussion of the value of data, prompting participants to describe the value of data in their job
-+ Optionally, facilitator can ask the value of the data just aggregated and how it might be useful to decisionmakers
++ Something old, something new
 --
 
-+ Data tells a story about something that's happened
+++ [Daily Tasks] (xxxxxx)
 --
 
-+ Can describe what happened directly or indirectly
+++ [Parks Inspection Program (PIP)] (xxxxxx)
+__
+
++ Available via a connection with the SQL Server table (real time)
 --
 
++ Also available on the Open Data Portal in CSV format (older data)
 
-![img-center-80](images/311data_parks.png)
-???
-+ Facilitator helps participants see the direct measurements of service requests while indirectly measuring when Park incidents actually happen
----
-
-class: center,middle
-# What are some of the data challenges you face?
-???
-+ Facilitator holds discussion with participants about the data issues they face on a regular basis
-+ Facilitator prompts participants to think about their data problems as we go through the data techniques today
----
-exclude:true
-class:middle
-> Facts do not "speak for themselves." They speak for or against competing theories. Facts divorced from theory or visions are mere isolated curiosities.
-
-## -Thomas Sowell *A Conflict of Visions*
-
----
-
-# What is Analysis?
---
-
->“Analysis is simply the pursuit of understanding, usually through detailed inspection or comparison”
-
-## - Carter Hewgley, former Director of Analytics, [Center for Government Excellence](https://govex.jhu.edu/)
-???
-+ Facilitator prompts participants to think about analysis in the context of their work and what it is they are trying to accomplish
-
----
-
-class:center,middle
-# A Quick Recap from <br>Data Analysis with Excel I and II
-
----
-
-# 5 Data Analytics Tasks
-???
-+ Facilitator introduces the 5 main tasks of analysis
-+ Facilitator reminds participants we've already done the first task
-+ The goal is to dispell the "black box" sense of analytics as something mystic and unknowable
---
-
-1. Aggregating (PivotTable)
---
-
-2. Sorting
---
-
-3. Filtering
---
-
-4. Manipulating
---
-
-5. Visualizing
-
----
-
-# 1. Aggregating Data 
-???
-+ Facilitator reminds participants we've already done this work with the available data
-+ Facilitator prompts participants to think of other ways they aggregate data for insights
---
-
-+ Trends only become clear in aggregate
---
-
-+ Often where you discover the "so what"
---
-
-+ Aggregating data meaningfully can be tricky
---
-
-
-![img-center-70](images/311data_parks.png)
-
----
-
-# 2. Sorting
-???
-+ Facilitator discusses briefly the value of sorting, soliciting examples from participants of when they've sorted data for their work
---
-
-+ Reorganize rows in a dataset based on the values in a column
---
-
-+ Can sort on multiple columns
-
----
-
-# Sorting by Date
-???
-+ Facilitator leads participants through simple exercise to sort data in Excel
---
-
-![img-center-100](images/sort_overview.png)
---
-
-
-![img-center-100](images/sort1_box.png)
-???
-+ Facilitator emphasizes the need to expand the selection, describing (or better having participants describe) the consequences of not expanding the selection
-
----
-
-# Sorting by Date
-![img-center-65](images/sort4a.png)
-???
-+ Facilitator demonstrates filtering by multiple columns
---
-
-
-![img-center-65](images/sort4b.png)
-
-
----
-
-# Sorting by Date
-![img-center-60](images/sort4.png)
---
-
-
-![img-center-60](images/sort_final.png)
-???
-+ Facilitator finishes demonstration and solicits feedback from participants
----
-
-# 3. Filtering
-???
-+ Facilitator leads brief discussion of filtering, soliciting examples from participants on applicability to their own work
---
-
-+ Only show rows that contain some value
---
-
-+ Can filter by multiple values
---
-
-+ Can filter by values in multiple columns
-
----
-
-# Filtering
-![img-center-100](images/filter_slide83.png)
-???
-+ Facilitator demonstrates how to filter in Excel
----
-
-# Filtering
-![img-center-80](images/filtering_new_tree_slide_84.png)
-???
-+ Facilitator demonstrates filtering using the search box
-+ This isn't a Parks example and there's [an open issue to replace the graphic](https://github.com/Datapolitan-Training/parks-excel-analysis-i/issues/14)
-
----
-
-# 4. Manipulating Data (In a good way...)
-???
-+ Facilitator introduces topic of manipulating (or "transforming") data 
-+ Solicit feedback from participants on when they need to transform the data they work with and how they do it
---
-
-+ Sometimes available categories don't make sense
---
-
-+ Values may not be in the format you need (or have mistakes)
---
-
-+ You always want to have a clean copy of the data to go back to
---
-
-+ Best to keep track of what you've done
-
----
-
-# 5. Visualizing Data
-???
-+ Facilitator introduces the basic concepts of why we visualize data before leading participants through an exercise to create the chart shown
---
-
-+ Quickly communicate information
---
-
-+ Tell a clearer story
---
-
-+ A picture is worth a thousands words
-
----
-class:center,middle
-
-# When Are Parks Complaints Received?
-![img-center-90](images/311data_parks.png)
-
----
-
-# Data conversation
-
----
-
-class:center,middle
-# Documenting work
-???
-+ Remind students of process mapping
-
----
-
-# Remember this?
-![img-center-100](images/Makebreakfast.gif)
-.caption[By Scottsm1991 (Own work) [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0), via Wikimedia Commons]
-
----
-
-# Process Mapping
---
-
-+ Allows you to identify and strategize for key steps in your analysis
---
-
-+ Helps sequence tasks and identify gaps in understanding
---
-
-+ Provides a basis for documenting work
----
-
-# Process Mapping
-
-![img-center-100](images/Makebreakfast.gif)
-.caption[By Scottsm1991 (Own work) [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0), via Wikimedia Commons]
 
 ???
-+ Facilitator does the "I do" phase by describing a past project that was mapped out
 
 ---
 
-class:center,middle
-# SQL
+# Group Ideation
+
++ What questions do you have of the data?
+--
+
++ We will use a 3-3-3 ideation process
+--
+
+++ 3 minutes to brainstorm questions you have on your own
+__
+
+++ 3 minutes to share and consolidate your questions with your group
+--
+
+++ 3 minutes to decide on one question you will answer today
+
+
+???
++Walk participants through the stages
++When it comes time to decide on the question, remind them that, to make the day more interesting, they should chose a more complex problem with multiple steps
 
 ---
 
-class:center,middle
-# Importing data with SQL
+# Shortened Process Mapping
+
++ What are the steps you will need to take to answer your question?
+--
+
++ We will use a 3-3-3 ideation process
+--
+
+++ 3 minutes to brainstorm steps on your own
+__
+
+++ 3 minutes to share and consolidate the steps with your group
+--
+
+++ 3 minutes to arrange the steps you will take to do the analysis
+
+
+???
++ Walk participants through the stages
++ When it comes time to decide on the question, remind them that, to make the day more interesting, they should chose a more complex problem with multiple steps
 
 ---
 
@@ -388,23 +299,156 @@ class:center,middle
 
 ---
 
-# Data types
+# 5 Analytic Tasks
+
++ Sort
++ Filter
++ Aggregate
++ Manipulate
++ Visualize
+
+???
++Ground participants in the 5 analytic tasks. This class will focus on the latter three.
 
 ---
 
-# Formulas
+# Is There a Correlation Between the # of Inspections and the # of Hours Worked?
+
+![img-center-70](images/emptytable.png)
+
+???
++Have class vote and share their hypotheses
++Do quick process map for steps to get to a completed table. Line up post-its on the wall in the front of the room.
++Main steps: Pull in #hrs worked, create Boro column, create table, calc values for #inspections, calc values for #hrs worked
+
 
 ---
 
-# Nesting functions
+# Documenting Your Work
+
++ Tab with running list
+--
+
++ New tab for each step
+--
+
++ Comments
+__
+
++ Other ways?
+--
+
+???
++Have participants name their styles for documenting before going through the list
 
 ---
 
-# Aggregation
+# Joining Datasets
+
++ Tips to prepare:
+__
+
+++ Be sure your file type(s) are Excel (.xls, .xlsx, xlm, .xlsm)
+--
+
+++ Be sure there is a common column of data
+--
+
+++ Be sure the data is the same format
+--
+
++ Unhide and unfilter all rows
+--
+
++ Transfer multiple workbooks into sheets in the same workbook
+--
+
++ Create and title a new column
+
+???
++ Before going over the tips, ask the group when joining datasets is helpful. Can they provide an example from their work?
++ How do they do "joins"?
++ What tips or best practices do they use when joining?
++ Then, go over the tips
++ Last, do the tips with the two datasets
+---
+
+# VLOOKUP
+
++ =VLOOKUP ( <span style="color:red">value</span>, <span style="color:orange">table</span>, <span style="color:green">col_index</span>, <span style="color:blue">[range_lookup]</span>)
+--
+
++ =VLOOKUP( <span style="color:red">“Find this value”</span>, <span style="color:orange">“In this table”</span>, <span style="color:green">“Once you find it, return its corresponding value in this column number”</span>, <span style="color:blue">“FALSE always”</span>)
+--
+
+++ TRUE allows for a fuzzy match while FALSE requires an exact match only
+--
+
+![img-center-70](images/formulamaker.png)
 
 ---
 
-# Joins
+# VLOOKUP
+
+---
+
+# VLOOKUP
+
+---
+
+# Create "Short Boro" Column
+
+---
+
+# Create "Full Boro" Column
+
+---
+
+# IF Function
+
+---
+
+# Nested Functions
+
+---
+
+# Create "Full Boro" Column
+
+---
+
+# IF Function - Bonus Round
+
+---
+
+# Create the Table
+
+---
+
+# Number of Inspections
+
+---
+
+# COUNTIF
+
+---
+
+# Number of Hours Worked
+
+---
+
+# SUMIF
+
+---
+
+# Check Your Work
+
+---
+
+# Stacked Values
+
+---
+
+# Your Turn
 
 ---
 
