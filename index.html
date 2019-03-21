@@ -299,6 +299,25 @@ class:center,middle
 
 ---
 
+# Documenting Your Work
+
++ Tab with running list
+--
+
++ New tab for each step
+--
+
++ Comments
+__
+
++ Other ways?
+--
+
+???
++Have participants name their styles for documenting before going through the list
+
+---
+
 # 5 Analytic Tasks
 
 + Sort
@@ -319,31 +338,196 @@ class:center,middle
 ???
 +Have class vote and share their hypotheses
 +Do quick process map for steps to get to a completed table. Line up post-its on the wall in the front of the room.
-+Main steps: Pull in #hrs worked, create Boro column, create table, calc values for #inspections, calc values for #hrs worked
-
++Main steps: Create Boro column, create table, calc values for #inspections, calc values for #hrs worked
 
 ---
 
-# Documenting Your Work
+# Create "Short Boro" Column
 
-+ Tab with running list
+--
++ We will use the LEFT function
 --
 
-+ New tab for each step
++ Useful for extracting a portion of a cell's contents
 --
 
-+ Comments
-__
-
-+ Other ways?
++ Syntax
++ =LEFT(<span style="color:red">text</span>, <span style="color:orange">[num_chars]</span>)
 --
+
++ What it Says
++ =LEFT ( <span style="color:red">"use this value"</span> , <span style="color:orange">"extract the first XX characters"</span> )
+--
+
+![img-center-70](images/leftfunction.png)
+
+--
+
+---
+
+# Create "Short Boro" Column
+
+![img-center-70](images/leftfunctionaction.png)
+
+---
+
+# Create "Full Boro" Column
+
++ We will use the IF function
+--
+
++ Syntax
++ =IF(<span style="color:red">logical_test</span>, <span style="color:orange">[value_if_true]</span>, <span style="color:green">[value_if_false]</span>)
+--
+
++ What it Says
++ =IF ( <span style="color:red">"test this statement I'm telling you"</span> , <span style="color:orange">"if it's true, return this value"</span>, <span style="color:green">"if it's false, return this other value"</span> )
+--
+
+![img-center-70](images/iffunction.png)
 
 ???
-+Have participants name their styles for documenting before going through the list
++Play the formula out. What happens when it's not a B?
++What solutions can the group think of?
 
 ---
 
+# Create "Full Boro" Column
+
+![img-center-70](images/iffunctionaction.png)
+
+---
+
+# Nested Functions
+
++ Useful when one formula alone doesn't meet your needs
+--
+
++ Often used with the IF function if there are multiple tests to be made
+--
+
++ Syntax
++ =IF(<span style="color:red">logical_test</span>,<span style="color:orange">[value_if_true]</span>,<span style="color:green">IF(</span><span style="color:red">logical_test</span>,<span style="color:orange">[value_if_true]</span>,<span style="color:green">IF(</span><span style="color:red">logical_test</span>,<span style="color:orange">[value_if_true]</span>,<span style="color:green">[value_if_false]</span>)
+--
+
++ What it Says
++ =IF ( <span style="color:red">"test this statement I'm telling you"</span> , <span style="color:orange">"if it's true, return this value"</span>, <span style="color:green">"if it's false..."</span> <span style="color:red">"test this statement I'm telling you"</span> , <span style="color:orange">"if it's true, return this value"</span>, <span style="color:green">"if it's false..."</span> <span style="color:red">"test this statement I'm telling you"</span> , <span style="color:orange">"if it's true, return this value"</span>, <span style="color:green">"if it's false, return this other value"</span> )
+--
+
+---
+
+# Create "Full Boro" Column
+
+![img-center-70](images/nestedifs.png)
+
++ =IF ( <span style="color:red">"test to see if B4 is equal to "B""</span> , <span style="color:orange">"if it's true, return Brooklyn"</span>, <span style="color:green">"if it's false..."</span> <span style="color:red">"test to see if B4 is equal to "Q""</span> , <span style="color:orange">"if it's true, return Queens"</span>, <span style="color:green">"if it's false..."</span> <span style="color:red">"test to see if B4 is equal to "M""</span> , <span style="color:orange">"if it's true, return Manhattan"</span>, <span style="color:green">"if it's false..."</span> <span style="color:red">"test to see if B4 is equal to "X""</span> , <span style="color:orange">"if it's true, return Bronx"</span>, <span style="color:green">"if it's false, return Staten Island"</span> )
+
+---
+
+# IF Function - Bonus Round
+
++ Nesting LEFT into IF combines the "Short Boro" and "Full Boro" columns
+
+![img-center-70](images/ifbonus.png)
+
+---
+
+# Create the Table
+
+![img-center-70](images/table.png)
+
+???
++Make new tab and create table in it
+
+---
+
+# Number of Inspections
+
++ We will use the COUNTIF function
+--
+
++ Useful when you want to count the number of cells that fit a certain criteria
+--
+
++ Syntax
++ =COUNTIF(<span style="color:red">range</span>,<span style="color:orange">criteria</span>)
+--
+
++ What it Says
++ =COUNTIF (<span style="color:red">"search here"</span>, <span style="color:orange">"count every time you find this value"</span> )
+--
+
++ ![img-center-70](images/countiffunction.png)
+
+---
+
+# COUNTIF
+
++ ![img-center-70](images/countiffunctionaction.png)
+
+---
+
+# Number of Hours Worked
+
++ We will use the SUMIF function
+--
+
++ Useful when you want to add together the values in cells aligned with cells that fit a certain criteria
+--
+
++ It can only be used on numbers
+--
+
++ Syntax
++ =SUMIF(<span style="color:red">range</span>,<span style="color:orange">criteria</span>,<span style="color:green">[sum_range]</span>)
+--
+
++ What it Says
++ =SUMIF (<span style="color:red">"look here"</span>, <span style="color:orange">"for this value"</span>, <span style="color:green">"when you find it, add the corresponding value from here"</span> )
+--
+
++ ![img-center-70](images/sumiffunction.png)
+
+---
+
+# SUMIF
+
++ ![img-center-70](images/sumiffunctionaction.png)
+
+---
+
+# Check Your Work
+
++ Always a good idea to double check when using formulas
+--
+
++ You can check...
+--
+
+++ With a different set of formulas
+--
+
+++ With a PivotTable
+__
+
++ ![img-center-70](images/pivotcheck.png)
+
+
+---
+
+class:center,middle
+# What if we wanted to dig deeper into a Boro and analyze inspections and hours worked by park?
+
+???
++Ask the class: what would we need to do to set up a similar table?
+++Need to bring park name into PIP data from Daily Tasks
+++Wouldn't want to type out all the park names. Time to skip to pivot tables
+
+
+---
 # Joining Datasets
+
+--
 
 + Tips to prepare:
 __
@@ -375,80 +559,75 @@ __
 
 # VLOOKUP
 
+--
++ Syntax
 + =VLOOKUP ( <span style="color:red">value</span>, <span style="color:orange">table</span>, <span style="color:green">col_index</span>, <span style="color:blue">[range_lookup]</span>)
 --
 
++What it Says
 + =VLOOKUP( <span style="color:red">“Find this value”</span>, <span style="color:orange">“In this table”</span>, <span style="color:green">“Once you find it, return its corresponding value in this column number”</span>, <span style="color:blue">“FALSE always”</span>)
 --
 
-++ TRUE allows for a fuzzy match while FALSE requires an exact match only
++ TRUE allows for a fuzzy match while FALSE requires an exact match only
 --
 
-![img-center-70](images/formulamaker.png)
+![img-center-70](images/formulawriter.png)
 
 ---
 
 # VLOOKUP
 
----
-
-# VLOOKUP
+![img-center-70](images/vlookupfunctionaction.png)
 
 ---
 
-# Create "Short Boro" Column
+# PivotTable
 
----
+--
++ Often bypasses the need for SUMIF and COUNTIF
+--
 
-# Create "Full Boro" Column
-
----
-
-# IF Function
-
----
-
-# Nested Functions
-
----
-
-# Create "Full Boro" Column
-
----
-
-# IF Function - Bonus Round
-
----
-
-# Create the Table
-
----
-
-# Number of Inspections
-
----
-
-# COUNTIF
-
----
-
-# Number of Hours Worked
-
----
-
-# SUMIF
-
----
-
-# Check Your Work
+![img-center-70](images/pivotparks.png)
+--
 
 ---
 
 # Stacked Values
 
+--
++ You can stack values in rows or columns of a PivotTable
+--
+
++ Purpose: to show more information
+--
+
+![img-center-70](images/stackedpivot.png)
+--
+
+???
++Demonstrate stacked by boro then park
++Show how you can collapse and expand the first layer (boro in this example)
 ---
 
 # Your Turn
+
+--
++ Follow the process you outlined
+--
+
++ Document your work
+--
+
++ You will be presenting your analysis at the end of the day
+--
+
++ We'll be here to help
+--
+
+> If the statistics are boring, then you've got the wrong numbers.
+
+##-Edward Tufte
+--
 
 ---
 
@@ -462,8 +641,370 @@ class:center, middle
 
 ---
 
-# Optimizing queries
+# Data Visualization
 
+--
+class:middle
+> When communicating results to non-technical types there is nothing better than a clear visualization to make a point.
+
+##-John Tukey
+--
+
+???
++Start by asking the class "What is data viz?" "Why do we do it?" Then read next two quotes as support of what class said.
+
+---
+
+# Data Visualization
+
+class:middle
+> There are two goals when presenting data: convey your story and establish credibility.
+
+##-Edward Tufte
+
+---
+
+class:middle
+![img-center-80](images/tufte.png)
+.caption[Image Credit: [https://www.edwardtufte.com](https://www.edwardtufte.com), [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)]
+
+???
++What is this visualization showing? 
++What's your critique?
+
+---
+
+class:middle
+> Never underestimate your audience. It’s the most common mistake made by presenters. It is not about you anymore. It’s about your audience’s relationship with your content.
+
+##-Edward Tufte
+
+---
+
+# Key Elements to Consider When Designing a Visual
+
+--
++ Type of chart
+--
+
++ Amount of data
+--
+
++Title
+--
+
++Use of color
+--
+
++Data-Ink Ratio
+--
+___
+
+# Type of Chart - One Data Point
+
+class:middle
+![img-center-80](images/drinkingage.png)
+.caption[Image Credit: [https://www.cbc.ca](https://www.cbc.ca/news/canada/saskatchewan/drinking-age-will-remain-19-in-saskatchewan-1.1350523), [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)]
+
+???
++Thoughts on chart?
++Better way to show drinking ages across Canada? (map with 2 colors for 2 ages represented)
++Better way to show main point of article?
+
+---
+
+# Type of Chart - One Data Point
+
+class:middle
+![img-center-80](images/bignumber.png)
+
+???
++This is an alternative to the chart on the previous slide
+
+---
+
+# Type of Chart - One Data Point
+
+class:middle
+![img-center-80](images/littlemen.png)
+
+???
++There are other ways to represent one number
+
+---
+
+# Type of Chart - One Data Point
+
+class:middle
+![img-center-80](images/donutnumber.png)
+
+???
++There are other ways to represent one number
+
+---
+
+# Type of Chart - Comparing Two or More Numbers
+
+class:middle
+![img-center-80](images/mentalhealthbeds.png)
+.caption[Image Credit: [https://www.samhsa.gov](https://www.samhsa.gov/data/sites/default/files/2016_National_Mental_Health_Services_Survey.pdf), [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)]
+
+???
++Thoughts on chart? Constructive criticism?
+
+---
+
+# Type of Chart - Comparing Two or More Numbers
+
+class:middle
+![img-center-80](images/sidebysidebeds.png)
+
+---
+
+# Type of Chart - Comparing Two or More Numbers
+
+class:middle
+![img-center-80](images/piebeds.png)
+
+---
+
+class:middle
+> There is no data that can be displayed in a pie chart, that cannot be displayed BETTER in some other type of chart.
+
+##-John Tukey
+
+---
+
+# Type of Chart - Comparing Two or More Numbers
+
+class:middle
+![img-center-80](images/stackedbeds.png)
+
+---
+
+# Type of Chart - Change Over Time
+
+class:middle
+![img-center-80](images/linegraph.png)
+
+???
++Constructive feedback?
+
+---
+
+# Amount of Data
+
++ Remove "clutter" data that doesn't support the story
+
+???
++For line chart, what can be done?
+
+---
+
+# Amount of Data
+
+class:middle
+![img-center-80](images/slopechart.png)
+
+---
+
+# Amount of Data
+
+class:middle
+![img-center-80](images/indiaeats.png)
+.caption[Image Credit: [Huffington Post India](https://www.huffingtonpost.in/2016/06/14/how-india-eats_n_10434374.html), [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)]
+
+???
++Thoughts on chart? Constructive criticism?
+
+---
+
+#  Amount of Data
+
+class:middle
+![img-center-80](images/baseball.png)
+.caption[Image Credit: [Sports Center](https://www.facebook.com/SportsCenter/photos/a.166942843324566/2173658729319624/?type=3&theater), [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)]
+
+???
++Thoughts on chart? Constructive criticism?
+
+---
+
+# Title and Annotations
+
+Use the title and annotations to direct the reader's analysis
+--
+
++ Ask a question that the data answers
+--
++ Tell the reader the conclusion of the visualization
+--
++ Point out the trend or pattern you'd like the audience to notice
+--
+
+Don't get too wordy.
+--
+
+---
+
+# Title and Annotations
+
+class:middle
+![img-center-80](images/bedstitle.png)
+
+???
++Bringing back an old chart.
+
+---
+
+# Title and Annotations
+
+class:middle
+![img-center-80](images/foodorigin.png)
+.caption[Image Credit: [Bloomberg Markets](https://www.bloomberg.com/markets), [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)]
+
+???
++Thoughts on chart? Constructive criticism?
+
+---
+
+
+# Title and Annotations
+
+class:middle
+![img-center-80](images/obamatitle.png)
+.caption[Image Credit: [xxx](xxx), [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)]
+
+???
++Thoughts on chart? Constructive criticism?
+
+---
+
+# Use of Color
+
+Use color intentionally to make comprehension and interpretation easier.
+
++ Color code the same type of data
++ Accentuate the value(s) that demonstrate the point you are trying to make
+
+---
+
+# Use of Color
+
+class:middle
+![img-center-80](images/spaghetti.png)
+.caption[Image Credit: [Bloomberg](https://www.bloomberg.com/news/features/2018-07-26/she-launches-spaceships-sells-rockets-and-deals-with-elon-musk), [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)]
+
+---
+
+# Use of Color
+
+class:middle
+![img-center-80](images/obamadivided.png)
+.caption[Image Credit: [xxx](xxx), [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)]
+
+---
+
+# Use of Color
+
+
+class:middle
+![img-center-80](images/mhbedscolor.png)
+
+???
++Bringing back an old chart.
+
+---
+
+# Tips for Using Color
+
+--
++ Be sure there's a sufficient difference between your colors
+--
+++ Color scales are worth exploring
+--
++ Watch out for the connotation of certain colors (ex: red)
+--
++ Avoid patterns
+--
++ Don't use more than 6 colors
+--
++ Resource: [Color Brewer](http://colorbrewer2.org)
+---
+
+class:middle
+>Clutter and confusion are failures of design, not attributes of information.
+
+##-Edward Tufte
+
+???
++Class's thoughts on this? What does it mean? Do you agree?
+
+---
+
+# Data-Ink Ratio
+
+--
++ Ink used to describe the data / ink used to describe everything else
+--
++ Want the ratio to be high (two numbers as close as possible to each other)
+
+---
+
+#Data-Ink Ratio
+
+class:middle
+![img-center-80](images/baconbefore.png)
+
+???
++Thoughts on how to declutter
+
+---
+
+# Data-Ink Ratio
+
+class:middle
+![img-center-80](images/baconbefore.png)
+
+---
+
+# Data-Ink Ratio
+
+class:middle
+![img-center-80](images/baconafter.png)
+
+---
+
+class:center,middle
+# How do you learn to create good visualizations?
+# ...Make a lot of bad visualizations 
+
+---
+
+# Your Turn
+
+--
++ Graphically Represent the analyses you have done so far
+--
++ Incorporate data viz concepts we have discussed
+--
+
+???
++Give students approx 20 minutes
+
+---
+
+# Constructive Feedback
+
+--
++ Leave one chart you'd like feedback on up on your screen
+--
++ Grab your post-its and marker
+--
++ Visit 3-5 computers
+--
++ Leave feedback for each chart on a post-it stuck to the monitor
+--
 ---
 
 class:center,middle
@@ -471,17 +1012,119 @@ class:center,middle
 
 ---
 
+# Your Turn
+
+--
++ Incorporate the feedback you received on your chart
+--
++ Create a quick presentation of your data story to share with the class
+--
++ We'll be here to help
+--
++Make sure you've updated your documentation
+--
++[Click to submit your work](xxx)
+
+???
++Give class approx 40 minutes to create their presentations and submit their work
+
+---
+
+class:center,middle
 # Presentations
 
 ---
 
-# Wrap-up
+class:center,middle
+# WRAP-UP
 
 ---
 
+# What We've Covered Today
+
+--
++ More complex functions
+--
++ More complex analyses
+--
++ Ways to adapt your data visualization for your audience
+--
++ What else?
+--
+
 # Resources
-???
-+ Facilitator provides key resources for continued learning
+--
+
++ [Microsoft Excel keyboard shortcuts](https://support.office.com/en-us/article/keyboard-shortcuts-in-excel-for-windows-1798d9d5-842a-42b8-9c99-9b7213f0040f)
+--
+
++ [7 essential Excel tricks every office worker needs to know](https://www.microsofttraining.net/sharing/11-seven-essential-excel-tricks-every-office-worker-needs-to-know.html) (we covered 6 of the 7 today)
+--
+
++ [11 Places That Can Turn You Into A Microsoft Excel Power User](https://medium.com/the-mission/eleven-places-that-can-turn-you-into-a-microsoft-excel-power-user-c119f18e138c)
+--
+
++ [Data Sensemaking](http://fellinlovewithdata.com/teaching/developing-a-data-sensemaking-course) by Enrico Bertini
+--
+
++ [Datapolitan Training Classes](http://training.datapolitan.com)
+
+---
+name:contact
+
+## .center[Contact Information]
+<!-- ### Richard Dunks
+<ul>
+    <li style="font-size:35px">
+        Email: richard[at]datapolitan[dot]com
+    </li>
+    <li style="font-size:35px">
+        Website: <a href="http://www.datapolitan.com">http://www.datapolitan.com</a>
+    </li>
+    <li style="font-size:35px">
+        Twitter: <a href="https://twitter.com/datapolitan">@datapolitan</a>
+    </li>
+</ul> -->
+
+### Elana Shneyer
+<ul>
+    <li style="font-size:35px">
+        Email: elana[at]datapolitan[dot]com
+    </li>
+</ul>
+
+<!-- ### Julia Marden
+<ul>
+    <li style="font-size:35px">
+        Email: julia[at]tinypanther[dot]com
+    </li>
+    <li style="font-size:35px">
+        Website: <a href="http://tinypanther.com">http://tinypanther.com</a>
+    </li>
+    <li style="font-size:35px">
+        Twitter: <a href="https://twitter.com/juliaem">@juliaem</a>
+    </li>
+</ul> -->
+
+### Elizabeth DiLuzio
+<ul>
+    <li style="font-size:35px">
+        Email: Elizabeth[at]evaluationandlearningconsulting[dot]com
+    </li>
+    <li style="font-size:35px">
+        Website: <a href="http://www.evaluationandlearningconsulting.com">http://www.evaluationandlearningconsulting.com</a>
+    </li>
+    <li style="font-size:35px">
+        Twitter: <a href="https://twitter.com/lizdiluzio">@lizdiluzio</a>
+    </li>
+</ul>
+---
+
+class:center, middle
+# THANK YOU!
+
+---
+
 
     </textarea>
     <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js"></script>
