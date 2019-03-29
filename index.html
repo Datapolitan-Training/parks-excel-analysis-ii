@@ -1086,10 +1086,10 @@ class:center,middle
 
 --
 
-+ About to take a 15 minute break
++ We are about to take a 15 minute break
 --
 
-+ Leave one chart you'd like feedback on up on your screen
++ Leave up on your monitor one chart you'd like feedback on
 --
 
 + During break, visit 3 computers
@@ -1223,21 +1223,6 @@ name:contact
         Twitter: <a href="https://twitter.com/lizdiluzio">@lizdiluzio</a>
     </li>
 </ul>
----
-
-
-
- bring in the Sites information to the Features table
-+ Insert a column next to `inspection_id`
-+ This will be our key lookup value
-+ Call the column "district"
-+ Use this formula
-
-```
-=VLOOKUP(A2,AMPSInsExtract_Jun2016_Sites_20170613.csv!$A$1:$F$4841,2,FALSE)
-```
-+ Do the same for "propid" and extract the borough with a formula
-+ Add "inspection_date" if that looks interesting to you
 
 ---
 
@@ -1251,6 +1236,7 @@ exclude:true
 # Create the Table
 --
 
+exclude:true
 ![img-center-90](images/emptytable.png)
 
 ???
@@ -1263,9 +1249,11 @@ exclude:true
 # Number of Inspections
 --
 
+exclude:true
 + We will use the COUNTIF function
 --
 
+exclude:true
 + Useful when you want to count the number of cells that fit a certain criteria
 
 ---
@@ -1277,11 +1265,12 @@ exclude:true
 ### Syntax
 ### =COUNTIF(<span style="color:red">range</span>,<span style="color:orange">criteria</span>)
 --
+exclude:true
 
 ### What it Says
 ### =COUNTIF (<span style="color:red">"search here"</span>, <span style="color:orange">"count every time you find this value"</span> )
 --
-
+exclude:true
 ![img-center-50](images/countiffunction.png)
 
 ---
@@ -1290,7 +1279,7 @@ exclude:true
 
 # COUNTIF
 --
-
+exclude:true
 ![img-center-90](images/countiffunctionaction.png)
 
 ---
@@ -1299,13 +1288,13 @@ exclude:true
 
 # Number of Hours Worked
 --
-
+exclude:true
 + We will use the SUMIF function
 --
-
+exclude:true
 + Useful when you want to add together the values in cells aligned with cells that fit a certain criteria
 --
-
+exclude:true
 + It can only be used on numbers
 
 ---
@@ -1317,11 +1306,11 @@ exclude:true
 ### Syntax
 ### =SUMIF(<span style="color:red">range</span>,<span style="color:orange">criteria</span>,<span style="color:green">[sum_range]</span>)
 --
-
+exclude:true
 ### What it Says
 ### =SUMIF (<span style="color:red">"look here"</span>, <span style="color:orange">"for this value"</span>, <span style="color:green">"when you find it, add the corresponding value from here"</span> )
 --
-
+exclude:true
 ![img-center-40](images/sumiffunction.png)
 
 ---
@@ -1330,7 +1319,7 @@ exclude:true
 
 # SUMIF
 --
-
+exclude:true
 ![img-center-100](images/sumiffunctionaction.png)
 
 ---
@@ -1339,19 +1328,19 @@ exclude:true
 
 # Check Your Work
 --
-
+exclude:true
 ## Always a good idea to double check when using formulas
 --
-
+exclude:true
 ## You can check...
 --
-
+exclude:true
 + With a different set of formulas
 --
-
+exclude:true
 + With a PivotTable
 --
-
+exclude:true
 ![img-center-40](images/pivotcheck.png)
 ---
 
