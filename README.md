@@ -3,7 +3,7 @@
 ## Summary
 A one-day class reinforcing the skills necessary to clean, process, and visualize NYC Parks data, as well as introducing advanced functions and formulas, including joins, logic functions, and more advanced data visualization techniques with Microsoft Excel. This class reinforces problem ideation and process mapping skills taught in Introduction to Data Analysis and reinforces best practices for documenting work. Working collaboratively in small groups, participants develop an analytical question they explore throughout the class, presenting their data story at the end of class for constructive feedback.
 
-![img](Overview.jpg)
+![img](images/Overview.jpg)
 
 ## Target Audience
 Employees of all levels of responsibility who have a good working knowledge of how to sort, filter, aggregate, and visualize data in Microsoft Excel, as well as a familiarity with the data analytics process. Participants should have some familiarity with basic functions and how to write formulas to transform data. Participants should complete Introduction to Data Analysis prior to attending this class for an introduction to problem ideation and process mapping.
@@ -58,7 +58,7 @@ Employees of all levels of responsibility who have a good working knowledge of h
     + Presentations
 + Wrap-Up
 
-![img](Excel_II_Outline.jpg)
+![img](images/Excel_II_Outline.jpg)
 
 
 ## Exercise Descriptions
