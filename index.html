@@ -141,11 +141,7 @@ class:center,middle
 ---
 
 class:center,middle
-# Let's Review
-
----
-
-# A Review of <br>[Intro. to Data Analytics](http://training.datapolitan.com/parks-intro-analytics/#1) and <br>[Excel for Data Analysis I](http://training.datapolitan.com/parks-excel-analysis-i/#1)
+# A Review of <br>[Introduction to Data Analytics](http://training.datapolitan.com/parks-intro-analytics/#1) and <br>[Excel for Data Analysis I](http://training.datapolitan.com/parks-excel-analysis-i/#1)
 
 ---
 
@@ -483,6 +479,31 @@ class:center,middle
 
 ![img-center-40](images/pivotcheck.png)
 
+
+---
+
+name:vlookup
+class:center,middle
+# How often do you need to combine data from different spreadsheets?
+
+---
+
+# [VLOOKUP](https://support.office.com/en-us/article/VLOOKUP-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1)
++ Useful for referencing data from another sheet (reference tables)
++ Basic Syntax
+```
+=VLOOKUP(lookup_value, table_array, col_index_num, [range_lookup])
+```
++ Example
+```
+=VLOOKUP(A2,SHEET2$A1:$D500,4,FALSE)
+```
++ Lookup the value in cell A2 in the range A1:D500 on SHEET2 and return whatever you find in column 4 (D)
+
+---
+
+# VLOOKUP
++ We're going to write a formula to....
 
 ---
 
@@ -1082,6 +1103,15 @@ class:center,middle
 
 ---
 
+class:center,middle
+# What's to Come
+
+???
++ Remind students that you got the data from today via hyperlink. Next class they will explore how to pull the data themselves via SQL
++ Show where that is accessed in Excel
+
+---
+
 # Resources
 
 --
@@ -1149,6 +1179,22 @@ name:contact
         Twitter: <a href="https://twitter.com/lizdiluzio">@lizdiluzio</a>
     </li>
 </ul>
+---
+
+
+
+ bring in the Sites information to the Features table
++ Insert a column next to `inspection_id`
++ This will be our key lookup value
++ Call the column "district"
++ Use this formula
+
+```
+=VLOOKUP(A2,AMPSInsExtract_Jun2016_Sites_20170613.csv!$A$1:$F$4841,2,FALSE)
+```
++ Do the same for "propid" and extract the borough with a formula
++ Add "inspection_date" if that looks interesting to you
+
 ---
 
 class:center, middle
