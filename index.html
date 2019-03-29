@@ -384,6 +384,11 @@ class:center,middle
 
 ![img-center-100](images/ifbonus.png)
 
+--
+
+### What do you think?
+
+
 ???
 + Debrief nested formulas before moving on. What are their reactions? What are the pros and cons?
 
@@ -400,11 +405,16 @@ class:center,middle
 
 # Conditional Formulas
 
+--
+
 + IF is an example of a conditional formula
+--
 
 + Conditional formulas make logical comparisons between expressions
+--
 
 + They test whether the comparison is TRUE or FALSE
+--
 
 + They take one type of action if TRUE and a different if FALSE
 
@@ -421,9 +431,12 @@ class:center,middle
 
 + <br>[NOT](https://support.office.com/en-ie/article/not-function-9cfc6011-a054-40c7-a140-cd4ba2d87d77)
 
-+ COUNTIF
++ <br>[COUNTIF](https://support.office.com/en-us/article/COUNTIF-function-E0DE10C6-F885-4E71-ABB4-1F464816DF34)
 
-+ SUMIF
++ <br>[SUMIF](https://support.office.com/en-us/article/SUMIF-function-169B8C99-C05C-4483-A712-1697A653039B)
+
+???
++ This is a pivot portion of class. Check in with the timing and interest level. You can choose to demo some of these other options, and how they can be nested into one another, or choose to move on.
 
 ---
 
@@ -434,31 +447,21 @@ class:center,middle
 ---
 
 # [VLOOKUP](https://support.office.com/en-us/article/VLOOKUP-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1)
-+ Useful for referencing data from another sheet (reference tables)
-+ Basic Syntax
-```
-=VLOOKUP(lookup_value, table_array, col_index_num, [range_lookup])
-```
-+ Example
-```
-=VLOOKUP(A2,SHEET2$A1:$D500,4,FALSE)
-```
-+ Lookup the value in cell A2 in the range A1:D500 on SHEET2 and return whatever you find in column 4 (D)
 
----
+--
 
-# VLOOKUP
-+ We're going to write a formula to....
+### Useful for referencing data from another sheet (reference tables)
 
----
+--
+### Syntax
+### =VLOOKUP ( <span style="color:red">value</span>, <span style="color:orange">table</span>, <span style="color:green">col_index</span>, <span style="color:blue">[range_lookup]</span>)
+--
 
-class:center,middle
-# What if we wanted to dig deeper into a Boro and analyze inspections and hours worked by park?
+### What it Says
+### =VLOOKUP( <span style="color:red">“Find this value”</span>, <span style="color:orange">“In this table”</span>, <span style="color:green">“Once you find it, return its corresponding value in this column number”</span>, <span style="color:blue">“FALSE always”</span>)
+--
 
-???
-+Ask the class: what would we need to do to set up a similar table?
-++Need to bring park name into PIP data from Daily Tasks
-++Wouldn't want to type out all the park names. Time to skip to pivot tables
+### TRUE allows for a fuzzy match while FALSE requires an exact match only
 
 
 ---
@@ -487,27 +490,12 @@ class:center,middle
 + Create and title a new column
 
 ???
-+ Before going over the tips, ask the group when joining datasets is helpful. Can they provide an example from their work?
-+ How do they do "joins"?
-+ What tips or best practices do they use when joining?
++ Before going over the tips, ask the group what tips or best practices do they use when joining?
 + Then, go over the tips
 + Last, do the tips with the two datasets
 ---
 
-# VLOOKUP
 
---
-### Syntax
-### =VLOOKUP ( <span style="color:red">value</span>, <span style="color:orange">table</span>, <span style="color:green">col_index</span>, <span style="color:blue">[range_lookup]</span>)
---
-
-### What it Says
-### =VLOOKUP( <span style="color:red">“Find this value”</span>, <span style="color:orange">“In this table”</span>, <span style="color:green">“Once you find it, return its corresponding value in this column number”</span>, <span style="color:blue">“FALSE always”</span>)
---
-
-### TRUE allows for a fuzzy match while FALSE requires an exact match only
-
----
 
 # VLOOKUP
 
