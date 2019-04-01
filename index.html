@@ -228,6 +228,9 @@ class:center,middle
 --
 
 + Sort
+???
++ Note the dates won't sort in order -> some 2004-2012 are in as 1904-1912
++ Good thing to point out and discuss dates and times in Excel
 --
 
 + Filter
@@ -367,9 +370,34 @@ name:conditional
 --
 <br>
 ![img-center-90](images/tod2.png)
+???
++ Note there are 4 rows with errors because times aren't formatted properly (text instead of serial)
 --
 
+
 ## What are we telling Excel to do?
+---
+
+# Morning vs Afternoon Inspections
+
+![img-center-70](images/tod3.png)
+
+---
+
+# Nesting Functions
+--
+
++ Notice we didn't rely on just one function to accomplish this
+--
+
+![img-center-100](images/nest1.png)
+--
+
++ In this case, we used the output from the `HOUR` function as part of the input to our `IF` function
+--
+
++ This is called "nesting" and helps us create more complex formulas
+
 ---
 name:full-boro
 # Create "Full Boro" Column
