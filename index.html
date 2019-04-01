@@ -475,8 +475,6 @@ class:middle
 
 # Nested IF Statement Example
 
-
-
 ## Syntax
 ### =IF(<span style="color:red">logical_test</span>,<span style="color:orange">[value_if_true]</span>,<span style="color:green">IF(</span><span style="color:red">logical_test</span>,<span style="color:orange">[value_if_true]</span>,<span style="color:green">IF(</span><span style="color:red">logical_test</span>,<span style="color:orange">[value_if_true]</span>,<span style="color:green">[value_if_false]</span>)
 --
@@ -488,28 +486,32 @@ class:middle
 
 # Create "Full Boro" Column
 
-![img-center-90](images/nestedifs.png)
+![img-center-100](images/nestedifs.png)
 --
 
-### =IF ( <span style="color:red">"test to see if B4 is equal to "B""</span> , <span style="color:orange">"if it's true, return Brooklyn"</span>, <span style="color:green">"if it's false..."</span> <span style="color:red">"test to see if B4 is equal to "Q""</span> , <span style="color:orange">"if it's true, return Queens"</span>, <span style="color:green">"if it's false..."</span> <span style="color:red">"test to see if B4 is equal to "M""</span> , <span style="color:orange">"if it's true, return Manhattan"</span>, <span style="color:green">"if it's false..."</span> <span style="color:red">"test to see if B4 is equal to "X""</span> , <span style="color:orange">"if it's true, return Bronx"</span>, <span style="color:green">"if it's false...</span> <span style="color:red">"test to see if B4 is equal to "R""</span> , <span style="color:orange">"if it's true, return Staten Island"</span>, <span style="color:green">"if it's false, return "Other" </span>
+### =IF ( <span style="color:red">"test to see if B4 is equal to "B""</span> , <span style="color:orange">"if it's true, return Brooklyn"</span>, <span style="color:green">"if it's false..."</span> <span style="color:red">"test to see if B4 is equal to "Q""</span> , <span style="color:orange">"if it's true, return Queens"</span>, <span style="color:green">"if it's false..."</span> <span style="color:red">"test to see if B4 is equal to "M""</span> , <span style="color:orange">"if it's true, return Manhattan"</span>, <span style="color:green">"if it's false..."</span> <span style="color:red">"test to see if B4 is equal to "X""</span> , <span style="color:orange">"if it's true, return Bronx"</span>, <span style="color:green">"if it's false...</span> <span style="color:red">"test to see if B4 is equal to "R""</span> , <span style="color:orange">"if it's true, return Staten Island"</span>, <span style="color:green">"if it's false, return "Other"</span>)
 
 ---
 
 # IF Function - Bonus Round
 --
 
-### Nesting LEFT into IF combines the "Short Boro" and "Full Boro" columns
++ Nesting `LEFT` into `IF` combines the "Short Boro" and "Full Boro" columns
 --
 
-## Create a new column titled "Boro"
-
++ The output from `LEFT` becomes part of the logical test for the `IF` statement
 --
+
++ Try it yourself in a new column titled "Boro"
+--
+
+
 
 ![img-center-100](images/ifbonus.png)
 
 --
 
-### ...what do you think?
+## ...is this useful?
 
 
 ???
