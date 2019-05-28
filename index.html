@@ -492,6 +492,14 @@ class:middle
 # Create "Full Boro" Column
 
 ![img-center-100](images/nestedifs.png)
+
+???
+
++ The formula is: 
+```
+=IF(B2="B","Brooklyn",IF(B2="M","Manhattan",IF(B2="Q","Queens",IF(B2="X","Bronx",IF(B2="R","Staten Island","Other")))))
+```
+
 --
 
 ### =IF ( <span style="color:red">"test to see if B4 is equal to "B""</span> , <span style="color:orange">"if it's true, return Brooklyn"</span>, <span style="color:green">"if it's false..."</span> <span style="color:red">"test to see if B4 is equal to "Q""</span> , <span style="color:orange">"if it's true, return Queens"</span>, <span style="color:green">"if it's false..."</span> <span style="color:red">"test to see if B4 is equal to "M""</span> , <span style="color:orange">"if it's true, return Manhattan"</span>, <span style="color:green">"if it's false..."</span> <span style="color:red">"test to see if B4 is equal to "X""</span> , <span style="color:orange">"if it's true, return Bronx"</span>, <span style="color:green">"if it's false...</span> <span style="color:red">"test to see if B4 is equal to "R""</span> , <span style="color:orange">"if it's true, return Staten Island"</span>, <span style="color:green">"if it's false, return "Other"</span>)
@@ -520,6 +528,11 @@ class:middle
 
 
 ???
++ Code for this is:
+
+```
+=IF(LEFT(A2)="B","Brooklyn",IF(LEFT(A2)="M","Manhattan",IF(LEFT(A2)="Q","Queens",IF(LEFT(A2)="X","Bronx",IF(LEFT(A2)="R","Staten Island","Other")))))
+```
 
 
 ---
@@ -1353,6 +1366,10 @@ name:contact
 
 class:center, middle
 # THANK YOU!
+
+# Please take a moment to <br>[provide your feedback](https://docs.google.com/forms/d/e/1FAIpQLScqxFDbN09n67Od5Cj5hIWatMIwnqBoQhLzTnMn4JT5hcLSBw/viewform?usp=sf_link)
+
+## And checkout [the dashboard of your responses](https://datastudio.google.com/s/kSGuvoygzjg)
 
 ---
 
