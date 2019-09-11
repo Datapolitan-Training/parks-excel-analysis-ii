@@ -611,7 +611,7 @@ class:center,middle
 # Let's pull the park names from [PIP All Sites](data/PIP_AllSites.xlsx)
 
 ???
-+ Download daily tasks
++ Download All Sites
 + Complete the tips to prepare from last slide: identify common column of data
 + transfer data into same workbook
 + create column for new data
@@ -624,10 +624,33 @@ class:center,middle
 ---
 
 # Looking Up Park Name
-![img-center-100](images/vlookupfunctionaction.PNG)
+![img-center-100](images/vlookup_ex_rev.png)
+
+```
+=VLOOKUP(A2,'[PIP_AllSites.xlsx]PIP All Sites'!$B$1:$G$6670,6,FALSE)
+```
+
+--
+
+## Breaking This Down
+--
+
++ Lookup the value in cell A2
+--
+
++ Match the value in PIP_AllSites Column B
+--
+
++ Return the value in the 6th column of the range
+--
+
++ Don't do any fuzzy matching
+
+
+
 ???
 
-`=VLOOKUP(A2,'Daily Tasks Dataset'!A:G,7,FALSE)`
+`=VLOOKUP(A2,'[PIP_AllSites.xlsx]PIP All Sites'!$B$1:$G$6670,6,FALSE)`
 ---
 
 class:center,middle
