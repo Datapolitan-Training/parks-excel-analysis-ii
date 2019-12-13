@@ -1,4 +1,4 @@
-# Data Analysis with Excel II
+# Excel for Data Analysis II
 
 ## Summary
 A one-day class reinforcing the skills necessary to clean, process, and visualize NYC Parks data, as well as introducing advanced functions and formulas, including joins, logic functions, and more advanced data visualization techniques with Microsoft Excel. This class reinforces problem ideation and process mapping skills taught in Introduction to Data Analysis and reinforces best practices for documenting work. Working collaboratively in small groups, participants develop an analytical question they explore throughout the class, presenting their data story at the end of class for constructive feedback.
